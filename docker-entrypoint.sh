@@ -21,6 +21,8 @@ git_clone
 
 cd ${REPO_PATH}
 
+rm -rf {*,.*}
+
 while [ ${GIT_SYNC_ONE_TIME:-false} != true  ]
 do 
 	sleep ${GIT_SYNC_WAIT:-120}
