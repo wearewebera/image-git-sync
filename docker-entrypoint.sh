@@ -17,11 +17,11 @@ git_pull(){
   git pull
 }
 
+rm -rf {*,.*}
+
 git_clone
 
 cd ${REPO_PATH}
-
-rm -rf {*,.*}
 
 while [ ${GIT_SYNC_ONE_TIME:-false} != true  ]
 do 
