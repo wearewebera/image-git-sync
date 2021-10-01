@@ -19,6 +19,8 @@ git_pull(){
 
 rm -rf {*,.*}
 
+GIT_SSL_NO_VERIFY=1
+
 git_clone
 
 cd ${REPO_PATH}
