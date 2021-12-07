@@ -14,7 +14,7 @@ git_clone() {
 }
 
 git_pull(){
-  git pull
+  git pull -q
 }
 
 rm -rf {*,.*}
